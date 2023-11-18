@@ -1,0 +1,14 @@
+name: get the count of python files
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        0;276;0c11;rgb:ffff/ffff/ffffuses: actions/checkout@v2 # checkout the repository content
+
+      - name: execute python script # run main.py
+        run: python count_ipynb_file.py
+	
